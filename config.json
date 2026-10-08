@@ -1,0 +1,55 @@
+{
+  "model": {
+    "name": "yolov8n.pt",
+    "confidence": 0.35,
+    "iou": 0.45,
+    "device": "auto",
+    "tracker": "bytetrack.yaml"
+  },
+  "crowd": {
+    "capacity": 20,
+    "warning_ratio": 0.7,
+    "critical_ratio": 1.0,
+    "minimum_people_for_alert": 5,
+    "alert_cooldown_seconds": 15
+  },
+  "roi": {
+    "enabled": true,
+    "normalized_points": [
+      [
+        0.03,
+        0.05
+      ],
+      [
+        0.97,
+        0.05
+      ],
+      [
+        0.97,
+        0.97
+      ],
+      [
+        0.03,
+        0.97
+      ]
+    ]
+  },
+  "line_counting": {
+    "enabled": true,
+    "orientation": "horizontal",
+    "position_ratio": 0.55,
+    "dead_zone_pixels": 8
+  },
+  "display": {
+    "show_ids": true,
+    "show_fps": true,
+    "show_roi": true,
+    "show_trails": true,
+    "trail_length": 20,
+    "window_name": "Advanced Crowd Detection"
+  },
+  "recording": {
+    "fps_fallback": 25.0,
+    "codec": "mp4v"
+  }
+}

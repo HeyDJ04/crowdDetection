@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+venv/
+.venv/
+yolov8*.pt
+output/*.mp4
+output/logs/*.csv
+output/snapshots/*.jpg
